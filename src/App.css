@@ -1,0 +1,27 @@
+/*Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Reset page in CSS */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size: 100%;
+    font-family: 'Staatliches', cursive;
+    color:rgb(255, 255, 255)
+}
+
+div, section, span, ul, li, a{
+    box-sizing: border-box;
+}
+
+/*Font family for paragraghs*/
+p{
+    font-family: 'Staatliches', cursive;
+    font-size:25px;
+    margin:-6px;
+    color:rgb(255, 255, 255)
+}
