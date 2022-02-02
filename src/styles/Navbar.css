@@ -1,60 +1,68 @@
 /*Navigation bar BEGINS*/
-header{
-    width:95%;
-    height: 25px;
-    display:flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    position: fixed;
-    z-index: 999;
-    background-color: black;
-    color:rgb(255, 255, 255);
-    box-shadow: 10px 10px 12px rgb(77, 145, 255);
+header {
+  width: 95%;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  z-index: 999;
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 10px 10px 12px #4d91ff;
+          box-shadow: 10px 10px 12px #4d91ff;
 }
 
-.navbar{
-    text-align:right;
+.top {
+  background-image: url(../images/image1.jpg);
+  background-size: cover;
+  min-height: 10%;
 }
 
-.navbar li{
-    list-style: none;
-    display:inline-block;
-    width:110px;
-    text-align: center;
+.navbar {
+  text-align: right;
 }
 
-.navbar li a{
-    text-decoration: none;
-    font-size: 19px;
-    color: rgb(255, 255, 255);
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  width: 110px;
+  text-align: center;
 }
 
-.navbar li a:hover{
-    margin:-5px;
-    border-bottom: 1px solid black;
-    transition: 3s;
-    
+.navbar li a {
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
 }
 
-.landing-direct{
-    text-decoration:none;
-    color:rgb(255, 255, 255)
+.navbar li a:hover {
+  margin: -5px;
+  border-bottom: 1px solid black;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
-.landing-direct:hover{
-    margin:10px;
-    border-bottom: 1px solid black;
-    transition: 1s;
-    cursor:pointer;
+.navbar li a:active {
+  color: #4d91ff;
 }
 
-.navbar li a .active{
-    color:white;
+.landing-direct {
+  text-decoration: none;
+  color: white;
 }
 
-.top{
-    background-image: url(../images/image1.jpg);
-    background-size:cover;
-    min-height: 10%;
+.landing-direct:hover {
+  margin: 10px;
+  border-bottom: 1px solid black;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
 }
+
 /*Navigation bar ENDS*/
+/*# sourceMappingURL=Navbar.css.map */

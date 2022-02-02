@@ -1,0 +1,59 @@
+/*Navigation bar BEGINS*/
+header{
+    width:95%;
+    height: 25px;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    color:rgb(255, 255, 255);
+    box-shadow: 10px 10px 12px rgb(77, 145, 255);
+}
+
+.top{
+    background-image: url(../images/image1.jpg);
+    background-size:cover;
+    min-height: 10%;
+}
+
+.navbar{
+    text-align:right;
+
+    li{
+        list-style: none;
+        display:inline-block;
+        width:110px;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            font-size: 19px;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover{
+            margin:-5px;
+            border-bottom: 1px solid black;
+            transition: 3s;
+        }
+
+        a:active{
+            color:rgb(77, 145, 255);
+        }
+    }
+}
+
+.landing-direct{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+
+    &:hover{
+        margin:10px;
+        border-bottom: 1px solid black;
+        transition: 1s;
+        cursor:pointer;
+    }
+}
+/*Navigation bar ENDS*/
