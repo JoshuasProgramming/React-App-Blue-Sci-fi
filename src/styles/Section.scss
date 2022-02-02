@@ -12,7 +12,7 @@ section{
     left:22%;
     transform: translate(-50%, -50%);
     color:whitesmoke;
-    font-size: 160px;
+    font-size: 130px;
     font-family: 'Staatliches', cursive;
     font-weight:bold;
     margin:0px 1px;
@@ -31,4 +31,37 @@ section{
 
 .new-line{
     white-space: pre-line;
+}
+
+/*Mobile Devices => Responsive Design */
+@media (max-width:600px){
+
+    section{
+        width:100%;
+        float: left;
+        height: 100vh;
+        position:fixed;
+    }
+
+    .home-header{
+        margin:0px 170px;
+        font-size:130px;
+        left:20%;
+    }
+}
+
+/* tablet devices => Responsive Design */
+@media (min-width: 601px) and (max-width: 1024px) {
+    section{
+        width:100%;
+        float: left;
+        height: 100vh;
+        position:fixed;
+    }
+
+    .home-header{
+        margin:0px 170px;
+        font-size:120px;
+        left:20%;
+    }
 }

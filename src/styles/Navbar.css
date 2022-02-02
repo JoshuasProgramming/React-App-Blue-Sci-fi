@@ -1,10 +1,13 @@
 /*Navigation bar BEGINS*/
-header {
+nav {
   width: 95%;
   height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -25,6 +28,9 @@ header {
 
 .navbar {
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar li {
@@ -62,6 +68,86 @@ header {
   -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .top {
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    min-height: 10%;
+  }
+  .navbar {
+    text-align: right;
+  }
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    width: 60px;
+    text-align: left;
+  }
+  .navbar li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+  }
+  .navbar li a:hover {
+    margin: -5px;
+    border-bottom: 1px solid black;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  .navbar li a:active {
+    color: #4d91ff;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .top {
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    min-height: 10%;
+  }
+  .navbar {
+    text-align: right;
+  }
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+  }
+  .navbar li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+  }
+  .navbar li a:hover {
+    margin: -5px;
+    border-bottom: 1px solid black;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  .navbar li a:active {
+    color: #4d91ff;
+  }
 }
 
 /*Navigation bar ENDS*/

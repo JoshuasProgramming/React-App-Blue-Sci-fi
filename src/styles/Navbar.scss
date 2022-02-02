@@ -1,8 +1,9 @@
 /*Navigation bar BEGINS*/
-header{
+nav{
     width:95%;
     height: 25px;
     display:flex;
+    flex-grow: 1; 
     justify-content: space-between;
     padding: 20px 50px;
     position: fixed;
@@ -20,6 +21,7 @@ header{
 
 .navbar{
     text-align:right;
+    display:flex;
 
     li{
         list-style: none;
@@ -55,5 +57,90 @@ header{
         transition: 1s;
         cursor:pointer;
     }
+}
+
+
+
+//Mobile devices => Responsive Design
+@media (max-width:600px){
+    nav{
+        display:flex;
+        flex-direction:initial;
+    }
+
+    .top{
+        background-image: url(../images/image1.jpg);
+        background-size:cover;
+        min-height: 10%;
+    }
+
+    .navbar{
+        text-align:right;
+    
+        li{
+            list-style: none;
+            display:inline-block;
+            width:60px;
+            text-align:left;
+    
+            a{
+                text-decoration: none;
+                font-size: 15px;
+                color: rgb(255, 255, 255);
+            }
+    
+            a:hover{
+                margin:-5px;
+                border-bottom: 1px solid black;
+                transition: 3s;
+            }
+    
+            a:active{
+                color:rgb(77, 145, 255);
+            }
+        }
+    }
+}
+
+//tablet devices => Responsive Design
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav{
+        display:flex;
+        flex-direction:initial;
+    }
+
+    .top{
+        background-image: url(../images/image1.jpg);
+        background-size:cover;
+        min-height: 10%;
+    }
+
+    .navbar{
+        text-align:right;
+    
+        li{
+            list-style: none;
+            display:inline-block;
+            width:100px;
+            text-align:left;
+    
+            a{
+                text-decoration: none;
+                font-size: 21px;
+                color: rgb(255, 255, 255);
+            }
+    
+            a:hover{
+                margin:-5px;
+                border-bottom: 1px solid black;
+                transition: 3s;
+            }
+    
+            a:active{
+                color:rgb(77, 145, 255);
+            }
+        }
+    }
+    
 }
 /*Navigation bar ENDS*/

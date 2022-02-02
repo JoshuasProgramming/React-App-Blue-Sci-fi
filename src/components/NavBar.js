@@ -4,8 +4,11 @@ import '../styles/Navbar.css';
 function NavBar(){
     return(
         <section className='top'>
-            <header>
-                <p><a href="index.html" className="landing-direct">Blue Sci-fi</a></p>
+            <nav>
+                <div className="left-side">
+                    <a href="index.html" className="landing-direct">Blue Sci-fi</a>
+                </div>
+                <div className="right-side">
                     <ul className="navbar">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Courses</a></li>
@@ -13,7 +16,8 @@ function NavBar(){
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Social media</a></li>
                     </ul>
-            </header>
+                </div>
+            </nav>
         </section>
     );
 }
